@@ -1,0 +1,28 @@
+.body {
+  display: grid;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  align-self: start;
+  margin: var(--space-m);
+}
+
+.site-title {
+  font-size: var(--font-scale-1);
+}
+
+.main {
+  align-self: start;
+  margin: var(--space-m);
+  justify-self: center;
+}
+
+.footer {
+  align-self: end;
+  margin: var(--space-m);
+  font-size: var(--font-scale-neg1);
+  justify-self: center;
+}

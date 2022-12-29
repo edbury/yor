@@ -1,0 +1,70 @@
+---
+layout: default
+---
+
+{% assign items_raw = site.sources | where: 'type', page.type %}
+{% assign items = items_raw | sort: 'year' %}
+
+{% if items.size > 1 %}
+  {% for item in items %}
+    {% if item.title == page.title %}
+      {% assign item_index = forloop.index %}
+    {% endif %}
+  {% endfor %}
+
+  {% assign prev_index = item_index | plus: 1 %}
+  {% assign next_index = item_index | minus: 1 %}
+
+  {% for item in items %}
+    {% if forloop.index == prev_index %}
+      {% assign prev = item %}
+    {% endif %}
+    {% if forloop.index == next_index %}
+      {% assign next = item %}
+    {% endif %}
+  {% endfor %}
+
+  {% if prev %}
+  <a href="{{ prev.url }}" class="sibling sibling--prev" title="{{ prev.title }}">{{ prev.title }}</a>
+  {% endif %}
+  {% if next %}
+  <a href="{{ next.url }}" class="sibling sibling--next" title="{{ next.title }}">{{ next.title }}</a>
+  {% endif %}
+{% endif %}
+{%- assign highlight-cover = page.title | url_encode | prepend: "/garden/assets/img/covers/" | replace: "%3A", "+" | append: ".jpg" -%}
+<article class="highlight--book">
+  <figure class="highlight--cover">
+    <img src={{highlight-cover}} alt="Cover of {{page.title}}">
+  </figure>
+  <section class="highlight--main">
+    <h1 class="highlight--title">{{page.title}}
+      <span class="highlight--author">{{page.author}}</span>
+    </h1>
+    {%- for highlight in page.highlights -%}
+      {%- assign highlight-target = highlight.text | truncatewords: 3 | downcase | url_encode | replace: "%20", "+" -%}
+      <figure class="highlight" id="{{highlight-target}}">
+        <blockquote class="highlight--quote">
+          <span>{{highlight.text | markdownify}}</span>
+        </blockquote>
+        <figcaption class="highlight--caption">
+          <cite class="highlight--cite">{{page.title}}</cite>
+          <a class="highlight--page" href="#{{highlight-target}}">p. {{highlight.page}}</a>
+        </figcaption>
+      </figure>
+    {%- endfor -%}
+    {% if page.backlinks.size > 0 %}
+      <side>
+        <h1>Notes mentioning this note</h1>
+        <ul>
+          {% for backlink in page.backlinks %}
+            <li>
+              <a class="internal-link" href="{{ site.baseurl }}{{ backlink.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">{{ backlink.title }}</a>
+              <p>{{ backlink.excerpt | strip_html | truncatewords: 20 }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+      </side>
+    {% endif %}
+  </section>
+</article>
