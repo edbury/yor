@@ -16,7 +16,7 @@ Eunha informed the party that a breach occurred shortly after the arrival of Art
 
 ## Personnel status
 
-[[D-043]]
+[[Billy Bedlam]]
 
 Status
 : Survived; successful exfiltration
@@ -38,7 +38,7 @@ Service hours
 | **Total**                      | **65,000 cr** |
 
 
-### [[D-191]]
+### [[Dr Elvis J Xaverian]]
 
 Status
 : Survived; successful exfiltration
@@ -59,7 +59,7 @@ Service hours
 | Recovery Bonus            | + 50,000 cr              |
 | **Total**                 | **74,000 cr** |
 
-### [[D-175]]
+### [[Mackenzie Tombs]]
 
 Status
 : Survived; successful exfiltration
@@ -79,7 +79,7 @@ Service hours
 | Recovery Bonus                  | + 50,000 cr             |
 | **Total**                       | **62,000 cr** |
 
-### [[D-467]]
+### [[C-467]]
 
 Status
 : Survived; successful exfiltration
@@ -101,7 +101,7 @@ Service hours
 | Recovery Bonus (Partial) | + 25,000 cr              |
 | **Total**                | **40,000 cr** |
 
-### [[D-636]]
+### [[Elyod Camroc]]
 
 Status
 : Survived; successful exfiltration

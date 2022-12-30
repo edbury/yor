@@ -2,11 +2,18 @@
 ---
 up:: [[locations]]
 
+# Prospero's Dream
+
+Prospero's Dream is a massive space station with a population of over 8 million. It’s haphazard, disorganized, overcrowded, and teeming with hustlers and criminals of all stripes.
+
 Sector
 : 32819L
 
 System
 : Unspecified
+
+Operator
+: Golyonova II Bratva
 
 Population
 : 8.7M
@@ -34,22 +41,22 @@ Decks (Center Spire)
 - [[Angus]]
 - [[The Babushka]]
 - [[Cutter]]
-- [[Federov]]
+- [[Fedorov]]
 - [[Stein]]
 
 ## Locations
 
 ### Sector 1
 
-- [[Dry Dock]]
+- [[The Dry Dock]]
 
 ### Sector 2
 
-- [[Stellar Burn]]
+- [[The Stellar Burn]]
 
 ### Sector 3
 
-- [[Chop Shop]]
+- [[The Chop Shop]]
 - [[GUN$]]
 
 ### Sector 4
@@ -62,7 +69,7 @@ Decks (Center Spire)
 
 ### Sector 6
 
-- [[CANYONHEAVY.market]]
+- [[CANYONHEAVY|CANYONHEAVY.market]]
 
 ### Sector 7
 

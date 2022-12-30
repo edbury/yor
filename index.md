@@ -1,17 +1,18 @@
 ---
 ---
+```
 :: LOCAL LINK ENABLED ::
 
-Level 1 connection to [[Site 17]] established. 
+[+] Level 2 connection to Site 17 established.
+[X] Site 24 data offline.
+[/] Waiting for steak@dream.public...
 
-Indexing archive. . .
-
-[[messages|messages (2)]]
-
-[[reports|reports (1)]]
+```
 
 [[locations]]
 
+[[messages]]
+
 [[personnel]]
 
-[[player resources|Player Resources]]
+[[reports]]

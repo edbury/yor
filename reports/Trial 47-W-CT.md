@@ -6,11 +6,11 @@ up:: [[reports]]
 
 [[Artifact 47]] was successfully identified and retrieved by Class D personnel. Artifact has been secured at [[Azure Base]].
 
-[[D-113]] has been reassigned to Class E and similarly secured following contamination by the Artifact. Subject appears blind to normal light spectrums but remains conscious and cogent.
+[[Ravi Chandra]] has been reassigned to Class E and similarly secured following contamination by the Artifact. Subject appears blind to normal light spectrums but remains conscious and cogent.
 
 ## Personnel status
 
-### [[D-113]]
+### [[Ravi Chandra]]
 
 Status
 : Reassigned to Class E; successful Jacobson recall
@@ -31,7 +31,7 @@ Service hours
 | Misc: Sample Recovery             | + 25,000 cr   | 
 | **Total**                         | **39,000 cr** |
 
-### [[D-175]]
+### [[Mackenzie Tombs]]
 
 Status
 : Survived; successful Jacobson recall
@@ -51,7 +51,7 @@ Service hours
 | Misc: Sample Recovery           | + 25,000 cr             |
 | **Total**                       | **33,000 cr** |
 
-### [[D-467]]
+### [[C-467]]
 
 Status
 : Survived; successful Jacobson recall
@@ -74,7 +74,7 @@ Service hours
 | Misc: Destruction of JU6 | - 10,000 cr  | 
 | **Total**                     | **24,500 cr** |
 
-### [[D-636]]
+### [[Elyod Camroc]]
 
 Status
 : Survived; successful Jacobson recall

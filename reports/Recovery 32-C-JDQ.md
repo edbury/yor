@@ -12,7 +12,7 @@ Field Agents encountered several unknown entities and have quarantined Artifact 
 
 ## Personnel status
 
-### [[D-191]]
+### [[Dr Elvis J Xaverian]]
 
 Status
 : Survived; successful Jacobson recall
@@ -32,7 +32,7 @@ Service hours
 | Hazard: 2                       | + 8,000 cr        |
 | **Total**                         | **12,000 cr** |
 
-### [[D-175]]
+### [[Mackenzie Tombs]]
 
 Status
 : Survived; successful Jacobson recall
@@ -51,7 +51,7 @@ Service hours
 | Hazard: 2                     | + 4,000 cr       |
 | **Total**                       | **6,000 cr** |
 
-### [[D-467]]
+### [[C-467]]
 
 Status
 : Survived; successful Jacobson recall
@@ -72,7 +72,7 @@ Service hours
 | Hazard: 2            | + 5,000 cr       |
 | **Total**              | **7,500 cr** |
 
-### [[D-636]]
+### [[Elyod Camroc]]
 
 Status
 : Survived; successful Jacobson recall

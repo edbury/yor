@@ -4,12 +4,21 @@ up:: [[index]]
 
 # Personnel
 
-[[D-113]]
+## Crew
 
-[[D-175]]
+- [[Billy Bedlam|Bedlam, Billy]]
+- [[C-467]]
+- [[Elyod Camroc|Camroc, Elyod]]
+- [[Ravi Chandra|Chandra, Ravi]]
+- [[Mackenzie Tombs|Tombs, Mackenzie]]
+- [[Dr Elvis J Xaverian|Xaverian, Dr. Elvis J.]]
 
-[[D-467]]
+## Contacts
 
-[[D-636]]
-
+- [[Angus]]
+- [[Aosta]]
+- [[The Babushka|Babushka, The]]
+- [[Cutter]]
+- [[Fedorov]]
+- [[Stein]]
 

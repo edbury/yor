@@ -1,8 +1,9 @@
 ---
 ---
-up:: [[_spaces/mosh/yor/index]]
+up:: [[index]]
 
-**Location:** [DATA REDACTED]
+Location
+: [DATA REDACTED]
 
 Site 17 is the second largest Foundation facility, primarily focused on the containment and study of low-risk humanoid entities, although the Site has additional capacities for the containment of inanimate objects, non-humanoid creatures, and higher risk anomalies. 
 

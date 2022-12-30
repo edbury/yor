@@ -19,7 +19,7 @@ Class C Security Officer Kelvin Nishida has been provisionally transitioned to E
 Status
 : Host malfunction; OC retrieved
 
-### [[D-113]]
+### [[Ravi Chandra]]
 
 Status
 : Survived; successful Jacobson recall
@@ -40,7 +40,7 @@ Service hours
 | Misc: Artifact identification     | + 10,000 cr |
 | **Total**                         | **14,000 cr**   | 
 
-### [[D-175]]
+### [[Mackenzie Tombs]]
 
 Status
 : Survived; successful Jacobson recall
@@ -60,7 +60,7 @@ Service hours
 | Misc: Compliant exit           | + 1,000 cr             |
 | **Total**                       | **3,000 cr** |
 
-### [[D-467]]
+### [[C-467]]
 
 Status
 : Survived; successful Jacobson recall
@@ -81,7 +81,7 @@ Service hours
 | Hazard: N/A            | + 0 cr       |
 | **Total**              | **2,000 cr** |
 
-### [[D-636]]
+### [[Elyod Camroc]]
 
 Status
 : Survived; successful Jacobson recall
