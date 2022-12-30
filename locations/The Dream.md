@@ -10,7 +10,7 @@ Sector
 : 32819L
 
 System
-: Unspecified
+: UNAVAILABLE
 
 Operator
 : Golyonova II Bratva
@@ -35,6 +35,16 @@ Decks (Ring Structures Avg.)
 
 Decks (Center Spire)
 : 430
+
+## Station Fees
+
+| Item             | Cost                |
+| ---------------- | ------------------- |
+| Docking Fee      | 1,000cr + 100cr/day |
+| Oxygen Tax       | 10cr/day/person     |
+| Seller's License | 2,000cr             |
+| Weapon Locker    | 1cr/day/weapon      |
+| Re-fueling       | Market Rate                    |
 
 ## Personnel
 
