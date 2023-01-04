@@ -5,12 +5,13 @@ up:: [[The Dream]]
 # The Chop Shop
 
 Location
-: Prospero's Dream, Sector 3
+: Sector 3
 
-Operator
-: [[The Babushka]]
+The Chop Shop is a cybernetics installation and repair shop overflowing with trash and grime. It is barely kept up by its hoarder/cybersurgeon proprietor, [[The Babushka]], and her holographic AI assistant, Zhenya.
 
-The Chop Shop is barely kept up by it’s hoarder/cybersurgeon proprietor. Appointments are made through the AI assistant, Zhenya, after a background check proves [[REDACTED]].
+## Background
+
+The Chop Shop is a place where those in need of cybernetic augmentation can receive it. Appointments are made through Zhenya after a background check proves that the patient is [[REDACTED]]). The Babushka is a legendary cybersurgeon, known for her intense privacy and clinical demeanor. However, she generally known to have "a good heart."
 
 ## Menu
 

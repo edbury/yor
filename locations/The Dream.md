@@ -59,15 +59,18 @@ Decks (Center Spire)
 ### Sector 1
 
 - [[The Dry Dock]]
+- [[The Golden Triangle]]
 
 ### Sector 2
 
 - [[The Stellar Burn]]
+- [[Godmode]]
 
 ### Sector 3
 
 - [[The Chop Shop]]
 - [[GUN$]]
+- [[The Big Show]]
 
 ### Sector 4
 
