@@ -207,6 +207,7 @@
 
   dl {
     display: grid;
+    max-width: var(--max-line-length);
     grid-template-columns: max-content 1fr;
     gap: var(--space-s);
   }

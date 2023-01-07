@@ -3,12 +3,15 @@
 up:: [[personnel]]
 
 # Angus
+<div class="console-image">
+<img src="/assets/Screenshot 2023-01-06 at 9.09.56 PM.png">
+</div>
 
 Name
 : Angus (a.k.a. Ang-Hause, @NG, angryhoss, AnGoose, The Databroker)
 
 Occupation
-: Sysadmin of Canyonheavy Market, [[REDACTED]]; talent agent for [[CANYONHEAVY]]'s hackers
+: Sysadmin of [[CANYONHEAVY|CANYONHEAVY.market]]
 
 > Contact for (operator of?) [[The Ice Box]]. - Doctor_X
 

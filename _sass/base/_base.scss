@@ -71,6 +71,34 @@ img {
   height: auto;
 }
 
+// Image Effects
+
+.console-image {
+  display: flex;
+  position: relative;
+  max-width: calc(var(--max-line-length) / 2);
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid var(--link-text-color);
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: var(--link-text-color);
+      opacity: .8;
+    }
+}
+
+.console-image img {
+  mix-blend-mode: screen;
+  filter: grayscale(100%) contrast(200%);
+  opacity: 1;
+}
+
 h1,
 h2,
 h3,
