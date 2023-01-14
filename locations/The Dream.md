@@ -4,7 +4,7 @@ up:: [[locations]]
 
 # Prospero's Dream
 
-Prospero's Dream is a massive space station with a population of over 8 million. It’s haphazard, disorganized, overcrowded, and teeming with hustlers and criminals of all stripes.
+Prospero's Dream is a space station located on the fringes of known space, a place where people go to escape the law and start anew. It's a place of opportunity, where anything can be bought or sold, as long as you have the credits to pay. The station is divided into ten sectors, each with its own unique character and dangers. The station is constantly buzzing with activity, with merchants, smugglers, mercenaries, and all manner of other individuals passing through its airlocks every day. It's a place where the strong thrive and the weak are left behind, and it's not for the faint of heart.
 
 Sector
 : 32819L
