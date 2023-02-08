@@ -1,4 +1,8 @@
-# Incident 38-C-DPRP: "Bloom"
+---
+---
+up:: [[reports]]
+
+# Recovery 38-C-DPRP: "Bloom"
 
 After recovery of [[The Carpathia]], Site 17 forces aboard [[The Barishal]] were directed to Site 24 for refuel and repair. En route to the facility, [[Director Aosta]] received news of a facility-wide containment breach at Site 24. The O-5 council has offered Aosta jurisdiction over Site 24 if he can recover the artifact that caused the breach as well as a back up of the facility's servers.
 
