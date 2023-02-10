@@ -7,6 +7,9 @@ up:: [[personnel]]
 Name
 : Andre Gupta
 
+Location
+: Unknown
+
 Occupation
 : Former C-Class Technician for [[The Foundation]], current fugitive
 

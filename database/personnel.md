@@ -1,6 +1,6 @@
 ---
 ---
-up:: [[index]]
+up:: [[database]]
 
 # Personnel
 

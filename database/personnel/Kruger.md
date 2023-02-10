@@ -19,4 +19,8 @@ Kruger is a tall, muscular man with long white hair and a refined, well-groomed 
 
 ## Background
 
-Very little is currently known about Kruger. He boarded the Teamster ship "Freighter XJ7C" shortly after meeting with Imogene Kane, and it is believed that he may be involved in her insurgency. It is unclear what Kruger's motivations are, or what role he will play in the ongoing conflict on Prospero's Dream.
+Very little is currently known about Kruger. He boarded the Teamster ship "Courier XJ7C" shortly after meeting with Imogene Kane, and it is believed that he may be involved in her insurgency. 
+
+Most recently, Kruger traveled through the artificial wormhole at [[Cerberus Station]]. His current status and whereabouts are unknown.
+
+It is unclear what Kruger's motivations are or what role he plays in the ongoing conflict on Prospero's Dream.

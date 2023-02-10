@@ -190,6 +190,7 @@
   }
 
   a, .invalid-link {
+    display: inline-block;
     text-transform: uppercase;
     white-space: nowrap;
   }
