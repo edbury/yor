@@ -9,12 +9,11 @@
 
 ```
 
-[[locations]]
+[[mission log]]
+
+[[database]]
 
 [[messages]]
 
-[[personnel]]
-
 [[reports]]
 
-[[mission log]]

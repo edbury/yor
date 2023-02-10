@@ -7,6 +7,9 @@ up:: [[personnel]]
 Name
 : Kruger
 
+Location
+: Unknown
+
 Occupation
 : Unknown
 
