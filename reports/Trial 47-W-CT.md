@@ -31,7 +31,7 @@ Service hours
 | Misc: Sample Recovery             | + 25,000 cr   | 
 | **Total**                         | **39,000 cr** |
 
-### [[Mackenzie Tombs]]
+### [[Mackenzie Toombs]]
 
 Status
 : Survived; successful Jacobson recall

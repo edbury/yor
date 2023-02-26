@@ -15,11 +15,22 @@ Several containment and security breaches over the past fifty years now appear t
 - [ ] ~~Locate Kruger~~
 - [ ] Decode [[Kruger]]'s navigational data
 
+### A Fistful of Artifacts
+
+Recent excursions have led to the acquisition of a number of artifacts, many of which bear the same insignia. The Foundation, among others, would be interested in these.
+
+- [x] Artifact 47, "The Color from Space"
+- [x] Artifact 21, "The Screwdriver"
+- [x] Artifact 38, "Bloom"
+- [ ] The Containment Suit
+- [ ] Unit 31415, "Pi"
+- [ ] Artifact 79, "The Creation Device"
+
 ### Bones and Videotape
 
 A field team equipped with a prototype video camera to record unusual energy signatures has failed to return from an expedition into a structure of unknown origin.
 
-- [ ] Report to your contact on [[Idalia Minor]]
+- [ ] Report to Foundation contact on [[Idalia Minor]]
 
 ## Prospero's Dream
 

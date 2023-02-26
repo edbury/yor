@@ -32,7 +32,7 @@ Service hours
 | Hazard: 2                       | + 8,000 cr        |
 | **Total**                         | **12,000 cr** |
 
-### [[Mackenzie Tombs]]
+### [[Mackenzie Toombs]]
 
 Status
 : Survived; successful Jacobson recall

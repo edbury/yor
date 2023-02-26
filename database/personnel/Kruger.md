@@ -8,7 +8,7 @@ Name
 : Kruger
 
 Location
-: Unknown
+: Unknown, through the wormhole
 
 Occupation
 : Unknown

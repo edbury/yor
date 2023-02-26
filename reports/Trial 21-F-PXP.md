@@ -40,7 +40,7 @@ Service hours
 | Misc: Artifact identification     | + 10,000 cr |
 | **Total**                         | **14,000 cr**   | 
 
-### [[Mackenzie Tombs]]
+### [[Mackenzie Toombs]]
 
 Status
 : Survived; successful Jacobson recall

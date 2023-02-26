@@ -10,7 +10,7 @@ up:: [[database]]
 - [[C-467]]
 - [[Elyod Camroc|Camroc, Elyod]]
 - [[Ravi Chandra|Chandra, Ravi]]
-- [[Mackenzie Tombs|Tombs, Mackenzie]]
+- [[Mackenzie Toombs|Tombs, Mackenzie]]
 - [[Dr Elvis J Xaverian|Xaverian, Dr. Elvis J.]]
 
 ## Contacts

@@ -63,7 +63,7 @@ Service hours
 | Recovery Bonus            | + 50,000 cr              |
 | **Total**                 | **74,000 cr** |
 
-### [[Mackenzie Tombs]]
+### [[Mackenzie Toombs]]
 
 Status
 : Survived; successful exfiltration

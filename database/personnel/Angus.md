@@ -3,8 +3,9 @@
 up:: [[personnel]]
 
 # Angus
+
 <div class="console-image">
-<img src="/assets/Screenshot 2023-01-06 at 9.09.56 PM.png">
+<img src="/assets/SFCP-2-TV-42.png">
 </div>
 
 Name

@@ -79,17 +79,23 @@ img {
   max-width: calc(var(--max-line-length) / 2);
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid var(--link-text-color);
 
-    &::before {
+    &::before, &::after {
       position: absolute;
       content: "";
       top: 0;
       right: 0;
       left: 0;
       bottom: 0;
+      opacity: .5;
+    }
+
+    &::before {
       background-color: var(--link-text-color);
-      opacity: .8;
+    }
+
+    &::after {
+      border: 1px solid var(--link-text-color);
     }
 }
 

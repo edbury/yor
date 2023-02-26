@@ -4,6 +4,10 @@ up:: [[personnel]]
 
 # Ravi Chandra :: E-113
 
+<div class="console-image">
+<img src="/assets/SFCP-1-TV-104.png">
+</div>
+
 Status
 : Active, Field Agent
 
