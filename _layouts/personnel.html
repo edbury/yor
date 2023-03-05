@@ -49,8 +49,6 @@ layout: default
         <li><a href="/database/equipment/{{ gear[0] | join: "" | downcase | replace: " ", "-" | replace: "(", "" | replace: ")", ""}} ">{{ gear[0] }}</a> {% if gear[1] > 1 %}x {{ gear[1] }}{% endif %}</li> 
       {% endfor %}
     </ul>
-  
-    {{ content }}
   </div>
   <div>
     <h2>Skills</h2>
@@ -61,5 +59,8 @@ layout: default
         <li><a href="/system/skills#{{ skill | downcase | replace: " ", "-" }}">{{ skill }}</a></li> 
       {% endfor %}
     </ul>
+  </div>
+  <div class="personnel-notes">
+    {{ content }}
   </div>
 </content>

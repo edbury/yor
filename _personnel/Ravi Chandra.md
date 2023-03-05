@@ -1,18 +1,26 @@
 ---
+name: Ravi Chandra
+credits: 78,000cr
+class: Scientist
+stats:
+  strength: 18
+  speed: 21
+  intellect: 23
+  combat: 13
+saves:
+  sanity: 48
+  fear: 23
+  body: 27
+skills:
+  - computers
+  - hacking
+  - artificial intelligence
+  - jury-rigging
+gear:
+status: Active, Field agent
+callsign: E-113
+portrait: SFCP-1-TV-104.png
 ---
-up:: [[personnel]]
-
-# Ravi Chandra :: E-113
-
-<div class="console-image">
-<img src="/assets/SFCP-1-TV-104.png">
-</div>
-
-Status
-: Active, Field Agent
-
-FKA
-: D-113
 
 ## Notes
 
