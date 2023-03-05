@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+<p>UP :: <a href="/database/{{ page.collection }}">{{ page.collection }}</a></p>
+
+<content class="personnel-entry">
+  <div class="personnel-portrait">
+    <div class="console-image">
+      <img src="/assets/{{ page.portrait }}"/>
+    </div>
+  </div>
+  <div class="personnel-info">
+    <h1>{{ page.name }}</h1>
+
+    <dl class="personnel-stats">
+      <dt>Status</dt> 
+      <dd>{{ page.status }}</dd>
+    </dl>
+
+    <dl class="personnel-stats">
+      <dt>Designation</dt> 
+      <dd>{{ page.callsign }}</dd>
+    </dl>
+
+    <dl class="personnel-stats">
+      <dt>Credits</dt> 
+      <dd>{{ page.credits }}</dd>
+    </dl>
+
+    <dl class="personnel-stats">
+      {% for stat in page.stats %}
+        <dt>{{ stat[0] }}</dt> 
+        <dd>{{ stat[1] }}</dd>
+      {% endfor %}
+    </dl>
+    
+    <dl class="personnel-saves">
+      {% for save in page.saves %}
+        <dt>{{ save[0] }}</dt> 
+        <dd>{{ save[1] }}</dd>
+      {% endfor %}
+    </dl>
+  </div>
+  <div>
+    <h2>Gear</h2>
+    <ul class="personnel-gear">
+      {% for gear in page.gear %}
+        <li><a href="/database/equipment/{{ gear[0] | join: "" | downcase | replace: " ", "-" | replace: "(", "" | replace: ")", ""}} ">{{ gear[0] }}</a> {% if gear[1] > 1 %}x {{ gear[1] }}{% endif %}</li> 
+      {% endfor %}
+    </ul>
+  
+    {{ content }}
+  </div>
+  <div>
+    <h2>Skills</h2>
+
+    <ul class="personnel-skills">
+      {% assign skills = page.skills | nested_sort %}
+      {% for skill in skills %}
+        <li><a href="/system/skills#{{ skill | downcase | replace: " ", "-" }}">{{ skill }}</a></li> 
+      {% endfor %}
+    </ul>
+  </div>
+</content>

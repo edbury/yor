@@ -29,20 +29,24 @@ sass:
   sass_dir:          _sass
   style:            :compressed
 
-collections_dir: "garden"
 collections:
-  notes:
+  personnel:
     output: true
-    permalink: /:collection/:slug
-  sources:
+    permalink: /database/:collection/:slug
+  equipment:
     output: true
-    permalink: /highlight/:slug
-  spaces:
-    output: true
-    permalink: /:collection/:path
+    permalink: /database/:collection/:slug
 
 defaults:
   - scope:
       path: "**/*"
     values:
-      layout: "yor"
+      layout: "default"
+  - scope:
+      path: "_personnel/**/*.md"
+    values:
+      layout: "personnel"
+  - scope:
+      path: "_equipment/**/*.md"
+    values:
+      layout: "equipment"

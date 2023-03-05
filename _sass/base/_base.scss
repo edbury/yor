@@ -178,3 +178,91 @@ td, th {
 th {
   font-weight: var(--font-weight-bold);
 }
+
+a, .invalid-link {
+  display: inline-block;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+blockquote {
+  position: relative;
+  margin-inline-start: 4ch;
+
+  &::before {
+    position: absolute;
+    inset-inline-start: -4ch;
+    content: ">>";
+  }
+}
+
+dl {
+  display: grid;
+  max-width: var(--max-line-length);
+  grid-template-columns: max-content 1fr;
+  gap: var(--space-s);
+}
+
+dd {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--font-size-body);
+  margin-block-start: var(--space-m);
+  margin-block-end: var(--space-s);
+
+  &::before {
+    margin-inline-end: 1ch;
+  }
+
+  &::after {
+    margin-inline-start: 1ch;
+  }
+}
+
+h1 {
+  margin-block-start: 0;
+}
+
+$hch: "#";
+$hcontent: "";
+
+@for $level from 1 through 6 {
+  $hcontent: $hcontent + $hch;
+
+  h#{$level} {
+    &::before {
+      content: $hcontent;
+    }
+  }
+}
+
+table {
+  min-width: 100%;
+}
+
+td, th {
+  position: relative;
+  overflow: hidden;
+  border-block-end: 0;
+
+  &::after {
+    content: "----------------------------------------------------------------------";
+    position: absolute;
+    display: inline-block;
+    inset-block-end: -1ch;
+    inset-inline-start: 0;
+    font-weight: normal;
+    white-space: nowrap;
+  }
+}
+
+ul {
+  list-style-type: "- ";
+}
