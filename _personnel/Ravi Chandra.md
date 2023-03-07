@@ -1,5 +1,6 @@
 ---
 name: Ravi Chandra
+crew: true
 credits: 78,000cr
 class: Scientist
 stats:

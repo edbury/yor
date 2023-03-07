@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<p>UP :: <a href="/database/">database</a></p>
+
+<content class="personnel-directory">
+  <h1>Personnel</h1>
+
+  <h2>Crew</h2>
+
+  <ul>
+    {% assign crew = site.personnel | where: "crew", true %}
+    {% for pc in crew %}
+      <li><a href="{{pc.url}}">{{ pc.name }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <h2>Contacts</h2>
+
+  <ul>
+    {% assign contacts = site.personnel | where: "crew", nil %}
+    {% for npc in contacts %}
+      <li><a href="{{npc.url}}">{{ npc.name }}</a></li>
+    {% endfor %}
+  </ul>
+</content>

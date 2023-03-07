@@ -1,4 +1,5 @@
 ---
+crew: true
 name: Billy Bedlam
 credits: 37,200cr
 class: Teamster

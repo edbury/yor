@@ -1,5 +1,6 @@
 ---
 name: Dr. Elvis J. Xaverian
+crew: true
 credits: 90,655cr
 class: Scientist
 stats:

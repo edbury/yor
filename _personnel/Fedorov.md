@@ -1,14 +1,10 @@
 ---
+name: Federov
+status: Active
+location: [[The Dream]]
+loyalty: 21
+portrait: 
 ---
-up:: [[personnel]]
-
-# Fedorov
-
-Name
-: Fedorov (a.k.a SnAkEdAnCeR)
-
-Occupation
-: Associate at [[The Ice Box]]
 
 ## Appearance
 
@@ -16,4 +12,4 @@ Fedorov is tall and thin, with long, spiky hair that is dyed a deep shade of pur
 
 ## Background
 
-It is unclear what Fedorov's specific role at The Ice Box is, but it is likely that he works in some capacity within [[REDACTED]].
+It is unclear what Fedorov's specific role at [[The Ice Box]] is, but it is likely that he works in some capacity within [[REDACTED]].

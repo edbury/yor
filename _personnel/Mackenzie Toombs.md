@@ -1,5 +1,6 @@
 ---
 name: Mackenzie Toombs
+crew: true
 credits: 59,980cr
 class: Marine
 stats:

@@ -1,17 +1,8 @@
 ---
+name: Andre Gupta
+status: Deceased
+portrait: 
 ---
-up:: [[personnel]]
-
-# Andre Gupta, Ph.D.
-
-Name
-: Andre Gupta
-
-Location
-: Unknown
-
-Occupation
-: Former C-Class Technician for [[The Foundation]], current fugitive
 
 ## Appearance
 

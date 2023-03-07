@@ -1,20 +1,10 @@
 ---
+name: Angus
+status: Active, Sysadmin
+location: [[The Dream]]
+loyalty: 21
+portrait: SFCP-2-TV-42.png
 ---
-up:: [[personnel]]
-
-# Angus
-
-<div class="console-image">
-<img src="/assets/SFCP-2-TV-42.png">
-</div>
-
-Name
-: Angus (a.k.a. Ang-Hause, @NG, angryhoss, AnGoose, The Databroker)
-
-Occupation
-: Sysadmin of [[CANYONHEAVY|CANYONHEAVY.market]]
-
-> Contact for (operator of?) [[The Ice Box]]. - Doctor_X
 
 ## Appearance
 

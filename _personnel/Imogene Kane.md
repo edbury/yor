@@ -1,14 +1,9 @@
 ---
+name: Imogene Kane
+status: Active, Hunglung Leader
+location: [[The Dream]]
+portrait: 
 ---
-up:: [[personnel]]
-
-# Imogene Kane
-
-Name
-: Imogene Kane
-
-Occupation
-: Leader of the [[Hunglungs]] insurgency
 
 ## Appearance
 

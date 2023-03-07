@@ -1,17 +1,9 @@
 ---
+name: The Babushka
+status: Active
+location: [[The Dream]]
+portrait: 
 ---
-up:: [[personnel]]
-
-# The Babushka
-
-Name
-: The Babushka (real name unknown)
-
-Occupation
-: Proprietor of [[The Chop Shop]]
-
-Mods
-: Unknown. Assume everything.
 
 ## Appearance
 

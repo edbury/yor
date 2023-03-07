@@ -1,5 +1,6 @@
 ---
 name: Elyod Camroc
+crew: true
 credits: 1117,460cr
 class: Teamster
 stats:

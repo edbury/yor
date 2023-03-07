@@ -1,17 +1,9 @@
 ---
+name: Kruger
+status: Active(?) Deceased(?)
+location: UNKNOWN
+portrait: 
 ---
-up:: [[personnel]]
-
-# Kruger
-
-Name
-: Kruger
-
-Location
-: Unknown, through the wormhole
-
-Occupation
-: Unknown
 
 ## Appearance
 
@@ -23,4 +15,4 @@ Very little is currently known about Kruger. He boarded the Teamster ship "Couri
 
 Most recently, Kruger traveled through the artificial wormhole at [[Cerberus Station]]. His current status and whereabouts are unknown.
 
-It is unclear what Kruger's motivations are or what role he plays in the ongoing conflict on Prospero's Dream.
+It is unclear what Kruger's motivations are or what role he plays in the ongoing conflict on [[The Dream]].

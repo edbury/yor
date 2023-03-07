@@ -1,14 +1,10 @@
 ---
+name: Stein
+status: Active
+location: [[The Dream]]
+loyalty: 22
+portrait: 
 ---
-up:: [[personnel]]
-
-# Stein
-
-Name
-: Stein
-
-Occupation
-: Proprietor of [[GUN$]]
 
 ## Appearance
 
@@ -18,6 +14,6 @@ Despite his rough exterior, Stein has an excitable, curious demeanor.
 
 ## Background
 
-Stein is the proprietor of GUN$, a weapons retailer located in Sector 3 of Prospero's Dream. Stein has previous contact with the Foundation as a Colony Recruiter. It is unclear what Stein's specific role as a colony recruiter entailed, or why he decided to become a weapons retailer. 
+Stein is the proprietor of [[GUN$]], a weapons retailer located in Sector 3 of [[The Dream]]. Stein has previous contact with the Foundation as a Colony Recruiter. It is unclear what Stein's specific role as a colony recruiter entailed, or why he decided to become a weapons retailer. 
 
 Stein is well-respected in Sector 3, with a reputation for selling high-quality weapons and providing excellent customer service.
