@@ -1,0 +1,14 @@
+{
+  "name": "yor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/edbury/yor.git",
+  "author": "Edbury Enegren <edbury.enegren@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev-back": "cd yor-back && yarn develop",
+    "dev-front": "cd yor-front && npx @11ty/eleventy --serve",
+    "build-front": "cd yor-front && npx @11ty/eleventy",
+    "copy-images": "cp -r yor-back/public/uploads yor-front/dist/uploads"
+  }
+}
