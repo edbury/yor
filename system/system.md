@@ -1,7 +1,0 @@
----
----
-up:: [[index]]
-
-# System
-
-[[contacts]]
