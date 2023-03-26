@@ -1,0 +1,32 @@
+---
+title: Characters
+layout: default.njk
+pagination:
+  data: characters.data
+  size: 100
+  alias: characters
+permalink: 'database/characters/'
+eleventyNavigation:
+  key: characters
+  parent: database
+---
+
+<h1>Personnel</h1>
+
+<h2>Crew</h2>
+
+<ul>
+  {% set crew = characters | where("attributes.PC", true) %}
+  {% for pc in crew %}
+    <li><a href="/database/characters/{{ pc.attributes.Name }}/">{{ pc.attributes.Name }}</a></li>
+  {% endfor %}
+</ul>
+
+<h2>Contacts</h2>
+
+<ul>
+  {% set contacts = characters | where("attributes.PC", false) %}
+  {% for npc in contacts %}
+    <li><a href="/database/characters/{{ npc.attributes.Name }}/">{{ npc.attributes.Name }}</a></li>
+  {% endfor %}
+</ul>

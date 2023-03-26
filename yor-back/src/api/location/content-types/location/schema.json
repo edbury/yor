@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locations",
+  "info": {
+    "singularName": "location",
+    "pluralName": "locations",
+    "displayName": "Location",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Characters": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::character.character",
+      "mappedBy": "Location"
+    },
+    "Parent": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::location.location",
+      "inversedBy": "Children"
+    },
+    "Children": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::location.location",
+      "mappedBy": "Parent"
+    },
+    "Inventory": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::gear.gear"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Cluster",
+        "System",
+        "Planetoid",
+        "Station",
+        "Ship",
+        "Facility"
+      ]
+    },
+    "Description": {
+      "type": "richtext"
+    }
+  }
+}

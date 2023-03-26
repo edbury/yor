@@ -1,0 +1,83 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gears",
+  "info": {
+    "singularName": "gear",
+    "pluralName": "gears",
+    "displayName": "Gear",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Type": {
+      "type": "customField",
+      "options": [
+        "Equipment",
+        "Weapon",
+        "Armor",
+        "Patch",
+        "Trinket"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Cost": {
+      "type": "integer"
+    },
+    "Range": {
+      "type": "enumeration",
+      "enum": [
+        "Adjacent",
+        "Close",
+        "Long"
+      ]
+    },
+    "Damage": {
+      "type": "string"
+    },
+    "Shots": {
+      "type": "integer"
+    },
+    "Wound": {
+      "type": "customField",
+      "options": [
+        "Gore",
+        "Gunshot",
+        "Blunt Force",
+        "Fire/Explosives",
+        "Bleeding"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "Special": {
+      "type": "string"
+    },
+    "AP": {
+      "type": "integer"
+    },
+    "O2": {
+      "type": "integer"
+    },
+    "DamageAdv": {
+      "type": "boolean"
+    },
+    "SpeedDis": {
+      "type": "boolean"
+    },
+    "WoundAdj": {
+      "type": "enumeration",
+      "enum": [
+        "Advantage",
+        "Disadvantage"
+      ]
+    }
+  }
+}

@@ -1,0 +1,82 @@
+---
+layout: default.njk
+pagination:
+  data: gears.data
+  size: 1
+  alias: gear
+permalink: 'database/gear/{{ gear.id }}/'
+eleventyComputed:
+  title: "{{ gear.attributes.Name }}"
+eleventyNavigation:
+  key: "{{ gear.attributes.Name }}"
+  parent: gear
+---
+
+<h1>{{ gear.attributes.Name }}</h1>
+
+<dl class="gear-stats">
+  <dt>Cost</dt>
+  <dd>{{ gear.attributes.Cost }} cr</dd>
+  <dt>Type</dt>
+  <dd>
+    {{ gear.attributes.Type | join(", ") }}
+  </dd>
+  {% if 'Weapon' in gear.attributes.Type %}
+      <dt>Range</dt>
+      <dd>{{ gear.attributes.Range }}</dd>
+      <dt>Damage</dt>
+      <dd>
+        {{ gear.attributes.Damage }}
+        {% if gear.attributes.DamageAdv %}
+          [+]
+        {% endif %}
+      </dd>
+      <dt>Shots</dt>
+      <dd>
+        {% if gear.attributes.Shots %}
+          {{ gear.attributes.Shots }}
+        {% else %}
+          N/A
+        {% endif %}
+      </dd>
+      <dt>Wound</dt>
+      <dd>
+        {{ gear.attributes.Wound | join(", ") }}
+        {% if gear.attributes.WoundAdj == "Advantage" %}
+          [+]
+        {% elseif gear.attributes.WoundAdj == "Disadvantage" %}
+          [-]
+        {% endif %}
+      </dd>
+  {% endif %}
+  {% if 'Armor' in gear.attributes.Type %}
+      <dt>Armor</dt>
+      <dd>{{ gear.attributes.AP }} AP</dd>
+      <dt>O2</dt>
+      <dd>
+        {% if gear.attributes.O2 %}
+          {% if gear.attributes.O2 > 1 %}
+            {{ gear.attributes.O2 }} hours
+          {% else %}
+            {{ gear.attributes.O2 }} hour
+          {% endif %}
+        {% else %}
+          None
+        {% endif %}
+      </dd>
+      <dt>Speed</dt>
+      <dd>
+        {% if gear.attributes.SpeedDis %}
+          [-]
+        {% else %}
+          Normal
+        {% endif %}
+      </dd>
+  {% endif %}
+</dl>
+
+<p>{{ gear.attributes.Description }}</p>
+
+{% if gear.attributes.Special %}
+  <p><strong>NOTE:</strong> {{ gear.attributes.Special }}</p>
+{% endif %}

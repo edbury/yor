@@ -1,0 +1,107 @@
+---
+layout: default.njk
+pagination:
+  data: locations.data
+  size: 1
+  alias: location
+permalink: 'database/locations/{{ location.id }}/'
+eleventyComputed:
+  title: "{{ location.attributes.Name }}"
+eleventyNavigation:
+  key: "{{ location.attributes.Name }}"
+  parent: locations
+---
+{% set children = location.attributes.Children.data %}
+{% set inventory = location.attributes.Inventory.data %}
+{% set characters = location.attributes.Characters.data %}
+{% set childcharacters = [] %}
+{% set parent = location.attributes.Parent.data %}
+{% set parentbyid = locations.data | where("id", parent.id ) %}
+{% set grandparent = parentbyid[0].attributes.Parent.data %}
+{% set grandparentbyid = locations.data | where("id", grandparent.id ) %}
+{% set greatgrandparent = grandparentbyid[0].attributes.Parent.data %}
+
+<content class="location-entry">
+  <div class="location-main">
+    <h1>{{ location.attributes.Name }}</h1>
+
+    {% if location.attributes.Description %}
+      {{ location.attributes.Description | markdown | safe }}
+      {% else %}
+      <p>NO DATA CURRENTLY AVAILABLE ON THIS LOCATION</p>
+    {% endif %}
+
+    {% if children[0] %}
+      {% for child in children %}
+        <h2>{{ child.attributes.Name }}</h2>
+
+        {% if child.attributes.Description %}
+          {{ child.attributes.Description | markdown | excerpt | safe }}
+          {% else %}
+          <p>NO DATA CURRENTLY AVAILABLE ON THIS LOCATION</p>
+        {% endif %}
+
+        <p><a href="/database/locations/{{ child.id }}/">Read Entry</a></p>
+
+        {% set childbyid = locations.data | where("id", child.id ) | first %}
+        {% set childcharacters = (childcharacters.push(childbyid.attributes.Characters.data), childcharacters) %}
+      {% endfor %}
+    {% endif %}
+
+    {% for set in childcharacters %}
+      {% for character in set %}
+        {% set characters = (characters.push(character), characters) %}
+      {% endfor %}
+    {% endfor %}
+
+    {% if inventory[0] %}
+      <h2>Inventory</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>
+              Item
+            </th>
+            <th>
+              Cost
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for gear in inventory %}
+            <tr>
+              <td>{{ gear.attributes.Name }}</td>
+              <td>{{ gear.attributes.Cost }} cr</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% endif %}
+  </div>
+
+  <div class="location-meta">
+    <dl>
+      {% if greatgrandparent %}
+        <dt>{{ greatgrandparent.attributes.Type }}</dt>
+        <dd><a href="/database/locations/{{ greatgrandparent.id }}/">{{ greatgrandparent.attributes.Name }}</a></a></dd>
+      {% endif %}
+      {% if grandparent %}
+        <dt>{{ grandparent.attributes.Type }}</dt>
+        <dd><a href="/database/locations/{{ grandparent.id }}/">{{ grandparent.attributes.Name }}</a></dd>
+      {% endif %}
+      {% if parent %}
+        <dt>{{ parent.attributes.Type }}</dt>
+        <dd><a href="/database/locations/{{ parent.id }}/">{{ parent.attributes.Name }}</a></dd>
+      {% endif %}
+    </dl>
+    {% if characters[0] %}
+      <dl>
+        <dt>Contacts</dt>
+        {% for npc in characters | sort(false, false, 'attributes.Name')%}
+          <dd><a href="/database/characters/{{ npc.attributes.Name }}/">{{ npc.attributes.Name }}</a></dd>
+        {% endfor %}
+      </dl>
+    {% endif %}
+  </div>
+</content>

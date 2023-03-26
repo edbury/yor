@@ -1,0 +1,14 @@
+{
+  "name": "yor-front",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.0",
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "axios": "^1.3.4",
+    "eleventy-plugin-error-overlay": "^1.0.0",
+    "html-minifier": "^4.0.0",
+    "sass": "^1.59.3"
+  }
+}

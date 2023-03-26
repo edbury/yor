@@ -1,0 +1,28 @@
+---
+title: Skills
+layout: default.njk
+pagination:
+  data: skills.data
+  size: 100
+  alias: skills
+permalink: 'system/skills'
+eleventyNavigation:
+  key: skills
+  parent: system
+---
+
+{% set trained = skills | where("attributes.Tier", "Trained") %}
+{% set expert = skills | where("attributes.Tier", "Expert") %}
+{% set master = skills | where("attributes.Tier", "Master") %}
+{% set joined = [trained, expert, master] %}
+
+<h1>Skills</h1>
+
+{% for tier in joined %}
+  {% set top = tier | first %}
+  <h2>{{ top.attributes.Tier }}</h2>
+  {% for skill in tier %}
+    <h3 id="{{ skill.attributes.Name | urlencode }}">{{ skill.attributes.Name }}</h3>
+    {{ skill.attributes.Description }}
+  {% endfor %}
+{% endfor %}

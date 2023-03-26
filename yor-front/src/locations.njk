@@ -1,0 +1,49 @@
+---
+title: Locations
+layout: default.njk
+pagination:
+  data: locations.data
+  size: 100
+  alias: locations
+permalink: 'database/locations/'
+eleventyNavigation:
+  key: locations
+  parent: database
+---
+
+<h1>Location Directory</h1>
+
+<ul class="location-list">
+  {% for location in locations | where("attributes.Parent.data", null) %}
+    <li class="location-type-{{ location.attributes.Type }}">
+      <a href="/database/locations/{{ location.id }}/">{{ location.attributes.Name }}</a>
+      {% if location.attributes.Children.data %}
+        {% set children = location.attributes.Children.data %}
+        <ul class="location-list">
+        {% for child in children %}
+          <li class="location-type-{{ child.attributes.Type }}">
+            <a href="/database/locations/{{ child.id }}/">{{ child.attributes.Name }}</a>
+            {% set childbyid = locations | where("id", child.id ) | first %}
+            {% set grandchildren = childbyid.attributes.Children.data %}
+            <ul class="location-list">
+              {% for grandchild in grandchildren %}
+                <li class="location-type-{{ grandchild.attributes.Type }}">
+                  <a href="/database/locations/{{ grandchild.id }}/">{{ grandchild.attributes.Name }}</a>
+                  {% set grandchildbyid = locations | where("id", grandchild.id ) | first %}
+                  {% set greatgrandchildren = grandchildbyid.attributes.Children.data %}
+                  <ul class="location-list">
+                    {% for greatgrandchild in greatgrandchildren %}
+                      <li class="location-type-{{ greatgrandchild.attributes.Type }}">
+                        <a href="/database/locations/{{ greatgrandchild.id }}/">{{ greatgrandchild.attributes.Name }}</a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </li>
+              {% endfor %}
+            </ul>
+          </li>
+        {% endfor %}
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,88 @@
+{
+  "kind": "collectionType",
+  "collectionName": "characters",
+  "info": {
+    "singularName": "character",
+    "pluralName": "characters",
+    "displayName": "Character",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Credits": {
+      "type": "integer"
+    },
+    "PC": {
+      "type": "boolean"
+    },
+    "Class": {
+      "type": "enumeration",
+      "enum": [
+        "Teamster",
+        "Scientist",
+        "Android",
+        "Marine"
+      ]
+    },
+    "Strength": {
+      "type": "integer"
+    },
+    "Speed": {
+      "type": "integer"
+    },
+    "Intellect": {
+      "type": "integer"
+    },
+    "Combat": {
+      "type": "integer"
+    },
+    "Sanity": {
+      "type": "integer"
+    },
+    "Fear": {
+      "type": "integer"
+    },
+    "Body": {
+      "type": "integer"
+    },
+    "Portrait": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "skills": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::skill.skill"
+    },
+    "gears": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::gear.gear"
+    },
+    "Loyalty": {
+      "type": "integer"
+    },
+    "Location": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::location.location",
+      "inversedBy": "Characters"
+    },
+    "Description": {
+      "type": "richtext"
+    }
+  }
+}

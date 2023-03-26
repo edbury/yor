@@ -1,0 +1,114 @@
+---
+layout: default.njk
+pagination:
+  data: characters.data
+  size: 1
+  alias: character
+permalink: 'database/characters/{{ character.attributes.Name }}/'
+eleventyComputed:
+  title: "{{ character.attributes.Name }}"
+eleventyNavigation:
+  key: charkey
+  parent: characters
+---
+
+<content class="personnel-entry">
+  <div class="personnel-portrait">
+    <div class="console-image">
+      <img src="http://localhost:1337{{ character.attributes.Portrait.data.attributes.formats.small.url }}">
+    </div>
+  </div>
+  <div class="personnel-info">
+    <h1>{{ character.attributes.Name }}</h1>
+
+    {% if character.attributes.Class %}
+      <dl class="personnel-stats">
+        <dt>Class</dt> 
+        <dd>{{ character.attributes.Class }}</dd>
+      </dl>
+    {% endif %}
+
+    {% if character.attributes.Location.data %}
+      <dl class="personnel-stats">
+        <dt>Location</dt> 
+        <dd><a href="/database/locations/{{ character.attributes.Location.data.id }}/">{{ character.attributes.Location.data.attributes.Name }}</a></dd>
+      </dl>
+    {% endif %}
+
+    {% if character.attributes.Callsign %}
+      <dl class="personnel-stats">
+        <dt>Designation</dt> 
+        <dd>{{ character.attributes.Callsign }}</dd>
+      </dl>
+    {% endif %}
+
+    {% if character.attributes.Credits %}
+      <dl class="personnel-stats">
+        <dt>Credits</dt> 
+        <dd>{{ character.attributes.Credits }} cr</dd>
+      </dl>
+    {% endif %}
+
+    {% if character.attributes.Loyalty %}
+      <dl class="personnel-stats">
+        <dt>Loyalty</dt> 
+        <dd>{{ character.attributes.Loyalty }}</dd>
+      </dl>
+    {% endif %}
+
+    {% if character.attributes.PC %}
+      <dl class="personnel-stats">
+        <dt>Strength</dt>
+        <dd>{{ character.attributes.Strength }}</dd>
+        <dt>Intellect</dt>
+        <dd>{{ character.attributes.Intellect }}</dd>
+        <dt>Speed</dt>
+        <dd>{{ character.attributes.Speed }}</dd>
+        <dt>Combat</dt>
+        <dd>{{ character.attributes.Combat }}</dd>
+      </dl>
+      <dl class="personnel-stats">
+        <dt>Body</dt>
+        <dd>{{ character.attributes.Body }}</dd>
+        <dt>Fear</dt>
+        <dd>{{ character.attributes.Fear }}</dd>
+        <dt>Sanity</dt>
+        <dd>{{ character.attributes.Sanity }}</dd>
+      </dl>
+    {% endif %}
+  </div>
+
+  {% if character.attributes.gears.data[1] %}
+    <div>
+      <h2>Stash</h2>
+      <ul class="personnel-gear">
+        {% set gears = character.attributes.gears.data %}
+        {% for gear in gears %}
+          <li><a href="/database/gear/{{ gear.id }}">{{ gear.attributes.Name }}</a></li>        
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  {% if character.attributes.skills.data[1] %}
+    <div>
+      <h2>Skills</h2>
+
+      <ul class="personnel-skills">
+        {% set skills = character.attributes.skills.data %}
+        {% for skill in skills %}
+          <li><a href="/system/skills#{{ skill.attributes.Name }}">{{ skill.attributes.Name }}</a></li> 
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  {% if character.attributes.Description %}
+    <div class="personnel-notes">
+      {{ character.attributes.Description | markdown | safe }}
+    </div>
+  {% endif %}
+</content>
+
+
+

@@ -1,0 +1,44 @@
+---
+title: Gear
+layout: default.njk
+pagination:
+  data: gears.data
+  size: 100
+  alias: gears
+permalink: 'database/gear/'
+eleventyNavigation:
+  key: gear
+  parent: database
+---
+
+<h1>Gear</h1>
+
+<h2>Armor</h2>
+
+<ul>
+  {% for gear in gears %}
+    {% if 'Armor' in gear.attributes.Type %}
+      <li><a href="/database/gear/{{ gear.id }}/">{{ gear.attributes.Name }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<h2>Weapons</h2>
+
+<ul>
+  {% for gear in gears %}
+    {% if 'Weapon' in gear.attributes.Type %}
+      <li><a href="/database/gear/{{ gear.id }}/">{{ gear.attributes.Name }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<h2>Equipment</h2>
+
+<ul>
+  {% for gear in gears %}
+    {% if 'Equipment' in gear.attributes.Type %}
+      <li><a href="/database/gear/{{ gear.id }}/">{{ gear.attributes.Name }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>

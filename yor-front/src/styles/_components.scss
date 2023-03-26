@@ -1,0 +1,169 @@
+// Breadcrumbs
+
+.breadcrumbs {
+  &::before {
+    display: inline-block;
+    content: "UP ::";
+    padding-inline-end: 1ch;
+  }
+  
+  ul {
+    display: inline-block;
+    list-style-type: none;
+    margin-inline: 0;
+    padding-inline: 0;
+  }
+
+  li {
+    display: inline-block;
+
+    &::after {
+      content: " /";
+      padding-inline-end: 1ch;
+    }
+
+    &:last-child {
+      &::after {
+        content: "";
+      }
+    }
+  }
+}
+
+// Personnel 
+.personnel-entry {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(var(--max-line-length)/2), 1fr));
+  grid-auto-rows: auto;
+  gap: var(--space-m);
+}
+
+.personnel-skills {
+  text-transform: capitalize;
+}
+
+.personnel-stats {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  column-gap: var(--space-m);
+  row-gap: 0;
+  width: 100%;
+
+  dt {
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+
+  dd {
+    text-align: right;
+  }
+}
+
+.personnel-notes {
+  grid-column: 1 / -1
+}
+
+.gear-stats {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr max-content;
+  column-gap: var(--space-m);
+  row-gap: 0;
+  width: 100%;
+  margin-block-end: var(--space-l);
+
+  dt {
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+
+  dd {
+    text-align: right;
+  }
+}
+
+// Locations
+
+.location-entry {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  gap: var(--space-m);
+}
+
+.location-meta {
+  dl {
+    display: block;
+    margin-block-end: var(--space-m);
+  }
+
+  dt {
+    display: block;
+    margin-block-start: var(--space-s);
+    text-transform: capitalize;
+    font-weight: 600;
+
+    &:first-child {
+      margin-block-start: 0;
+    }
+  }
+
+  dd {
+    display: block;
+  }
+}
+
+.location-list {
+  list-style: none;
+  padding-inline-start: 0;
+
+  ul {
+    padding-inline-start: var(--space-m);
+  }
+
+  li {
+    &::before {
+      margin-inline-end: var(--space-s);
+    }
+  }
+}
+
+.location-type- {
+  &::before {
+    content: '-';
+  }
+}
+
+.location-type-Cluster {
+  &::before {
+    content: '☍';
+  }
+}
+
+.location-type-Facility {
+  &::before {
+    content: 'λ';
+  }
+}
+
+.location-type-Planetoid {
+  &::before {
+    content: '●';
+  }
+}
+
+.location-type-Ship {
+  &::before {
+    content: '♐︎';
+  }
+}
+
+.location-type-System {
+  &::before {
+    content: '☉';
+  }
+}
+
+.location-type-Station {
+  &::before {
+    content: '♦';
+  }
+}
