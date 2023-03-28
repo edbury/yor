@@ -9,6 +9,6 @@
     "dev-back": "cd yor-back && yarn develop",
     "dev-front": "cd yor-front && npx @11ty/eleventy --serve",
     "build-front": "cd yor-front && npx @11ty/eleventy",
-    "copy-images": "cp -r yor-back/public/uploads yor-front/dist/uploads"
+    "copy-images": "cp -r yor-back/public/uploads yor-front/dist/"
   }
 }

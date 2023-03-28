@@ -113,3 +113,4 @@ exports
 *.cache
 yor-back/build
 .strapi-updater.json
+.DS_Store
