@@ -60,7 +60,7 @@ In the meantime, he has sent you to retrieve a Stratemeyer agent from prison.
 
 Undina, Kruger's daughter, claims they are refugees from the other side of the Milky Way. Her people call themselves the Vaylen.
 
-She'll give up her father's rat ship if it will reuinte her family.
+She'll give up her father's rat ship if it will reunite her family.
 
 - [ ] Rescue Sylvestrus from Prison Station Echo
 
