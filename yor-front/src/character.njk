@@ -103,11 +103,13 @@ eleventyNavigation:
     </div>
   {% endif %}
 
-  {% if character.attributes.Description %}
-    <div class="personnel-notes">
-      {{ character.attributes.Description | markdown | safe }}
-    </div>
-  {% endif %}
+  <div class="personnel-notes">
+    {% if character.attributes.Description %}
+        {{ character.attributes.Description | markdown | safe }}
+        {% else %}
+        <p>NO DATA CURRENTLY AVAILABLE ON THIS INDIVIDUAL</p>
+    {% endif %}
+  </div>
 </content>
 
 
